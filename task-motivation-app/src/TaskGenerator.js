@@ -28,7 +28,7 @@ const TaskGenerator = () => {
     return (
         <div>
             <FancyText title text={'Task: ${currentTask.name}'} />
-            <FancyText text={'Status: ${currentTask.isComplete ? 'Completed ✔' : 'Pending'}'} />
+            <FancyText text={`Status: ${currentTask.isComplete ? 'Completed ✔' : 'Pending'}`} />
             <button onClick={markAsCompleted}>Mark as Completed</button>
             <button onClick={nextTask}>Next Task</button>
             <FancyText text={motivationalMessages[currentTaskIndex % motivationalMessages.length]} />
